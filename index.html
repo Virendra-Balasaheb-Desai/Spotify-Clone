@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="home">
+                <div class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#a9acb3"
+                        fill="none">
+                        <path d="M19.0005 4.99988L5.00045 18.9999M5.00045 4.99988L19.0005 18.9999" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="flex flexed">
+                    <div class="logo">
+                        <img src="assets/logo.svg" alt="logo" width="40" height="40">
+                    </div>
+                    <div class="title">Spotify</div>
+                </div>
+                <div class="flex home-flex">
+                    <div>
+                        <img src="assets/home.svg" alt="logo" width="30" height="30">
+                    </div>
+                    <div class="title">Home</div>
+                </div>
+                <div class="flex search-flex">
+                    <div class="search">
+                        <img src="assets/search.svg" alt="logo" width="30" height="30">
+                    </div>
+                    <div class="title search">Search</div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="lib flex">
+                    <div class="flex">
+                        <div class="lib-logo">
+                            <svg xmlns="http://www.w3.org/2200/svg" fill="#a9acb3" data-encore-id="icon" role="img"
+                                aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                                <path
+                                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="title">Songs Library</div>
+                    </div>
+                    <!-- <div class="add">
+                        <svg xmlns="http://www.w3.org/2200/svg" fill="#a9acb3" data-encore-id="icon" role="img"
+                            aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                            <path
+                                d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z">
+                            </path>
+                        </svg>
+                    </div> -->
+                </div>
+                <div class="created-lib">
+                    <ul id="songs">
+                    </ul>
+                </div>
+                <div class="foot">
+                    <div class="grid">
+                        <div class="title">Legal</div>
+                        <div class="title">Safety</div>
+                        <div class="title">Privacy</div>
+                        <div class="title">About Ads</div>
+                        <div class="title">Accessibility</div>
+                        <div class="title">Cookies</div>
+                        <div class="title">Cookies</div>
+                    </div>
+                    <div class="btn">
+                        <button>English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav flex">
+                <div class="flex between">
+                    <div class="flex than">
+                        <div class="hamburger">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"
+                                color="#a9acb3" fill="none">
+                                <path d="M4 5L16 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 19L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="lt">
+                            <img src="assets/lessthan.svg" alt="lt" width="22" height="22">
+                        </div>
+                        <div class="gt">
+                            <img src="assets/greatthan.svg" alt="gt" width="22" height="22">
+                        </div>
+                    </div>
+                    <div class="flex btn-flex">
+                        <div class="signup btn">
+                            <button>Sign up</button>
+                        </div>
+                        <div class="login btn">
+                            <button>Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-title">Songs Playlists</div>
+                <div class="card-container">  
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="songName">Song Name</div>
+                <div class="controls flex">
+                    <div class="previous">
+                        <img src="assets/previous.svg" alt="previous" width="35px" height="35px">
+                    </div>
+                    <div class="play-pause" id="play-pause">
+                        <img src="assets/playaudio.svg" alt="previous" width="35px" height="35px">
+                    </div>
+                    <div class="forward">
+                        <img src="assets/forward.svg" alt="previous" width="35px" height="35px">
+                    </div>
+                </div>
+                <div class="time-vol flex">
+                    <div class="songTime">00:00/00:00</div>
+                    <div class="volume flex">
+                        <div>
+                            <img src="assets/volumeon.svg" alt="volon" width="30" height="30" class="vol">
+                        </div>
+                        <div class="range">
+                            <input type="range" class="vol-range" value="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

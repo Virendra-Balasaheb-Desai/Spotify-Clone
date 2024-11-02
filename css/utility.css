@@ -1,0 +1,14 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border{
+    border:1px solid white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
